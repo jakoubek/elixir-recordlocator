@@ -19,23 +19,17 @@ With 6 chars you can encode integers up to more than 1 billion.
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `recordlocator` to your list of dependencies in `mix.exs`:
+The package can be installed by adding `recordlocator` to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
   [
-    {:recordlocator, "~> 0.1.0"}
+    {:recordlocator, "~> 1.0"}
   ]
 end
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/recordlocator>.
-
-
-
+Documentation is available on [HexDocs](https://hexdocs.pm/recordlocator).
 
 
 ## Usage
@@ -47,6 +41,9 @@ Encoding integers to recordlocators:
 
 rl
 # => 78G
+
+Recordlocator.encode!(5326)
+# => 78H
 ```
 
 Decoding recordlocators back into the integer values:
@@ -56,4 +53,7 @@ Decoding recordlocators back into the integer values:
 
 number
 # => 5325
+
+Recordlocator.decode!("78H")
+# => 5326
 ```
