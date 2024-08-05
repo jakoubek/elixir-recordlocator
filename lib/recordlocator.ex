@@ -1,6 +1,8 @@
 defmodule Recordlocator do
   @moduledoc """
-  Documentation for `Recordlocator`.
+  `Recordlocator` is a module for generating Recordlocators from integer values and decoding Recordlocators back to the integer value.
+
+  A Recordlocator is an alphanumeric representation for an integer value. It uses a 32 character alphabet to encode the integer values. A RecordLocator is shorter than the corresponding integer and easier to read and memorize. You can use it to encode autoincrement primary keys from an database into an human-readable representation for your users.
   """
 
   @char_map %{

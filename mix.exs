@@ -41,7 +41,8 @@ defmodule Recordlocator.MixProject do
 
   defp docs do
     [
-      main: "Recordlocator"
+      main: "readme",
+      extras: ["README.md"]
     ]
   end
 end
