@@ -34,6 +34,10 @@ Documentation is available on [HexDocs](https://hexdocs.pm/recordlocator).
 
 ## Usage
 
+> [!NOTE]
+> Both functions `encode/1` and `decode/1` are also available as _bang functions_ `encode!/1` and `decode!/1`.
+
+
 Encoding integers to recordlocators:
 
 ```elixir
